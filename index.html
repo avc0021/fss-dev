@@ -1,38 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSS Demo</title>
-</head>
-<body>
-    <div id="users">
-        <input class="search" placeholder="Search" />
-        <button class="sort" data-sort="name">
-          Sort by name
-        </button>
-      
-        <ul class="list">
-          <li>
-            <h3 class="name">Jonny Stromberg</h3>
-            <p class="born">1986</p>
-          </li>
-          <li>
-            <h3 class="name">Jonas Arnklint</h3>
-            <p class="born">1985</p>
-          </li>
-          <li>
-            <h3 class="name">Martina Elm</h3>
-            <p class="born">1986</p>
-          </li>
-          <li>
-            <h3 class="name">Gustaf Lindqvist</h3>
-            <p class="born">1983</p>
-          </li>
-        </ul>
-      
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="filter">
+      <h1>Select models</h1>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="UnitedStates"
+            class="state"
+            onchange="onChangeFunction()"
+          />United States</label
+        >
       </div>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-</body>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Argentina"
+            class="state"
+            onchange="onChangeFunction()"
+          />Argentina</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Korea"
+            class="state"
+            onchange="onChangeFunction()"
+          />Korea</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Africa"
+            class="state"
+            onchange="onChangeFunction()"
+          />Africa</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="UnitedKingdom"
+            class="state"
+            onchange="onChangeFunction()"
+          />United Kingdom</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Spain"
+            class="state"
+            onchange="onChangeFunction()"
+          />Spain</label
+        >
+      </div>
+      <h1>Select Semester</h1>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Spring"
+            class="Semesters"
+            onchange="onChangeFunction()"
+          />Spring</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="fall"
+            class="Semesters"
+            onchange="onChangeFunction()"
+          />fall</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Winter"
+            class="Semesters"
+            onchange="onChangeFunction()"
+          />Winter</label
+        >
+      </div>
+      <div class="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            rel="Summer"
+            class="Semesters"
+            onchange="onChangeFunction()"
+          />Summer</label
+        >
+      </div>
+    </div>
+    <div class="result">
+      <div class="UnitedStates fall">
+        <h1>United States Fall</h1>
+      </div>
+      <div class="UnitedStates fall">
+        <h1>United States Fall</h1>
+      </div>
+      <div class="Argentina Summer">
+        <h1>Argentina Summerr</h1>
+      </div>
+      <div class="UnitedKingdom Winter">
+        <h1>United Kingdom Winter</h1>
+      </div>
+    </div>
+
+    <!-- <div class="filterInputs">
+    <label><input type="checkbox" name="year" value="" checked><i></i>All years</label>
+    <label><input type="checkbox" name="year" value="1950"><i></i>1950</label>
+    <label><input type="checkbox" name="year" value="1960"><i></i>1960</label>
+    <label><input type="checkbox" name="year" value="1970"><i></i>1970</label>
+  </div>
+  
+  <div class="filterInputs">
+    <label><input type="radio" name="type" value=""><i></i>All types</label>
+    <label><input type="radio" name="type" value="movies"><i></i>Movies</label>
+    <label><input type="radio" name="type" value="music" checked><i></i>Music</label>
+    <label><input type="radio" name="type" value="newspapers"><i></i>Newspapers</label>
+  </div>
+  
+  <div data-filterable="1950 newspapers">1950 Newspapers</div>
+  <div data-filterable="1960 music">1960 Music</div>
+  <div data-filterable="1960 newspapers">1960 Newspapers</div>
+  <div data-filterable="1950 movies">1950 Movies</div>
+  <div data-filterable="1950 music">1950 Music</div> -->
+
+    <!-- <div class="search-wrapper">
+    <label for="search">Search Users</label>
+    <input type="search" id="search" data-search>
+  </div>
+  <div class="user-cards" data-user-cards-container></div>
+  <template data-user-template>
+    <div class="card">
+      <div class="header" data-header></div>
+      <div class="body" data-body></div>
+    </div>
+  </template> -->
+  </body>
 </html>
